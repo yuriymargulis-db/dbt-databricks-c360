@@ -38,8 +38,8 @@ def incrementally_ingest_folder(path, format, table):
               .toTable(table))
 
 spark.sql('create database if not exists dbdemos;')
-incrementally_ingest_folder('/dbdemos/dbt-retail/users', 'json', 'ysm.dbdemos.dbt_c360_bronze_users_ysm')
-incrementally_ingest_folder('/dbdemos/dbt-retail/orders', 'json', 'ysm.dbdemos.dbt_c360_bronze_orders_ysm')
-incrementally_ingest_folder('/dbdemos/dbt-retail/events', 'csv', 'ysm.dbdemos.dbt_c360_bronze_events_ysm')
+incrementally_ingest_folder('/dbdemos/dbt-retail/users', 'json', 'ysm.dbdemos.dbt_c360_bronze_users')
+incrementally_ingest_folder('/dbdemos/dbt-retail/orders', 'json', 'ysm.dbdemos.dbt_c360_bronze_orders')
+incrementally_ingest_folder('/dbdemos/dbt-retail/events', 'csv', 'ysm.dbdemos.dbt_c360_bronze_events')
 
 print('Congrats, our new data has been consumed and incrementally added to our bronze tables')
