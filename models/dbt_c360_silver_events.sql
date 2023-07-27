@@ -10,4 +10,4 @@ select
   platform,
   action,
   url
-from ysm.dbdemos.dbt_c360_bronze_events_ysm
+from ysm.dbdemos.dbt_c360_bronze_events
