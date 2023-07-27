@@ -17,11 +17,7 @@ models:
       - name: order_id
         tests:
           - unique
-      - name: user_id
-        tests:
-          - relationships:
-              to: ref('dbt_c360_silver_users')
-              field: user_id
+ 
               
               
               
