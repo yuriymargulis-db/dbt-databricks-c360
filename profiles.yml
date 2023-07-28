@@ -8,7 +8,7 @@ dbdemos_dbt_c360:
     local:
       type: databricks
       catalog: ysm
-      schema: dbdemos_dbt
+      schema: dbt_demo_silver_gold
       host: "{{ env_var('DBT_DATABRICKS_HOST') }}"
       http_path: "{{ env_var('DBT_DATABRICKS_HTTP_PATH') }}" #SQL warehouse Connection details
       token: "{{ env_var('DBT_DATABRICKS_TOKEN') }}" # Personal Access Token (PAT)
