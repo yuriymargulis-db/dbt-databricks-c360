@@ -22,5 +22,3 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 models:
   dbdemos_dbt_c360:
       materialized: table
-      staging:
-        materialized: view
